@@ -1,0 +1,93 @@
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+     
+ }
+ html,body{
+    height: 100%;
+    width:100%;
+ }
+ body{
+   display: flex;
+   
+   align-items: center;
+   justify-content:center ;
+background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGFuZHNjYXBlfGVufDB8fDB8fHww'); 
+ }
+
+ .container{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(255, 255, 255,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:20px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 30px rgba(0, 0,0, 0.5);
+    backdrop-filter: blur(10px);
+
+ }
+ .container h1{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: roboto;
+    text-shadow: 2px 2px 5px rgba(0, 0,0, 0.7);  
+ }
+ .container .search-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+ }
+ .container .search-box button{
+    padding: 5px 15px;
+    font-weight: 600;
+     font-family: roboto;
+    background:rgb(251, 127, 147);
+    border:none;
+    border-radius:5px;
+    color:white;
+    cursor:pointer;
+ }
+ .container .search-box button:hover{
+    background-color: #fd3366;
+ }
+ .container .search-box input[type='text']{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+ }
+ .weather-info{
+   
+ }
+ .weather-card{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+ margin-top: 30px;
+ gap: 5px;
+   
+ }
+ #description{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   background-color: none;
+   font-weight: 700;
+   text-align: center;
+ }
+ #error-message{
+   color: red;
+   font-weight: 700;
+ }
+ .weather-icon{
+   margin-top: 15px;
+   width: 100px;
+   height: 100px;
+   background-size: cover;
+ }
